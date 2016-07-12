@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+    index
+{% endblock %}
+{% block body %}
+    <p>正文</p>
+    {% for foo in article_list %}
+        <p>{{ foo }}</p>
+    {% endfor %}
+
+{% endblock %}

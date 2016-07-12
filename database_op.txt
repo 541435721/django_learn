@@ -1,0 +1,6 @@
+python manage.py startapp XXX # 创建名为XXX的应用
+python manage.py migrate # 迁移数据库
+python manage.py makemigrations XXX # 改动模型
+python manage.py sqlmigrate XXX 0001
+python manage.py createsuperuser # 创建超级用户
+python manage.py shell # Python shell
