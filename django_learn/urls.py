@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from news.views import index
+from news.views import index, alipy_notify
 
 urlpatterns = [
     url(r'^$', index),
     url(r'^admin/', admin.site.urls),
     url(r'^news/', include('news.urls')),
+    url(r'^ali/', alipy_notify),
 ]
